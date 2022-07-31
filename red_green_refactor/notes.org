@@ -1,1 +1,3 @@
-* Notes on TDD in Python
+* Notes on TDD and red-green-refactoring in Python
+
+
