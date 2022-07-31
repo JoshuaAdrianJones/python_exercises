@@ -21,5 +21,3 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
-    - name: Python Black Check
-      run: python black $(git ls-files '*.py')
