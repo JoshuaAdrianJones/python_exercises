@@ -22,4 +22,4 @@ jobs:
       run: |
         pylint $(git ls-files '*.py')
     - name: Python Black Check
-        python black $(git ls-files '*.py')
+      run: python black $(git ls-files '*.py')
