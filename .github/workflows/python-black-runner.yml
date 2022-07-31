@@ -1,4 +1,4 @@
-name: Pylint
+name: Black
 
 on: [push]
 
@@ -19,4 +19,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install black
     - name: Python Black Check
-      run: python black $(git ls-files '*.py')
+      run: black $(git ls-files '*.py')
