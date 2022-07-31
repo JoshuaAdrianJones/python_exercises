@@ -1,3 +1,0 @@
-* Notes on TDD and red-green-refactoring in Python
-
-
