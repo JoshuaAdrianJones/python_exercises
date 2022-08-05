@@ -13,6 +13,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        cd red_green_refactor
         python -m pip install --upgrade pip
         pip install pylint black
     - name: Analysing the code with pylint
@@ -20,5 +21,6 @@ jobs:
         pylint --rcfile .pylintrc $(git ls-files src/*.py tests/*.py)
     - name: check format with black
       run: |
+        cd red_green_refactor
         black src/
         black tests/
