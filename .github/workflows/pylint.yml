@@ -17,10 +17,9 @@ jobs:
         pip install pylint black
     - name: Analysing the code with pylint
       run: |
-        cd red_green_refactor/src
-        pylint $(git ls-files '*.py')
+        pylint --rcfile .pylintrc $(git ls-files src/*.py tests/*.py')
     - name: check format with black
       run: |
-        cd red_green_refactor/src
-        black .
+        black src/
+        black tests/
     
