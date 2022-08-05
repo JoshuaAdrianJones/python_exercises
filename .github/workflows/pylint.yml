@@ -22,5 +22,5 @@ jobs:
     - name: check format with black
       run: |
         cd red_green_refactor
-        black src/
-        black tests/
+        black --check src/
+        black --check tests/
