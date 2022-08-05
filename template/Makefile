@@ -1,15 +1,13 @@
-test-all:
-	python3 -m unittest tests/*.py
-
-test:
-	python3 -m unittest tests/*
-
 docker-build:
 	docker build . -t py
 docker-run:
 	docker run py
-
-checkers: 
+test:
+	python3 -m unittest tests/*.py
+coverage: 
 	coverage run -m unittest tests/*.py
 	coverage report -m
-	pylint src/
+lint:
+	pylint ./src/
+run:
+	make test coverage lint

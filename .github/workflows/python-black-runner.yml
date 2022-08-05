@@ -1,19 +1,8 @@
 name: Black
-
 on: [push]
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.8", "3.9", "3.10"]
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
+    runs-on: python:3.10.6-bullseye
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
