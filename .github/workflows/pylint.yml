@@ -21,11 +21,8 @@ jobs:
 
       - name: Analysing the code with pylint
         run: |
-          cd red_green_refactor
-          pylint --rcfile .pylintrc $(git ls-files src/*.py tests/*.py)
+          pylint --rcfile .pylintrc $(git ls-files */src/*.py */tests/*.py)
 
       - name: check format with black
         run: |
-          cd red_green_refactor
-          black --check src/
-          black --check tests/
+          black --check $(git ls-files */src/*.py */tests/*.py)

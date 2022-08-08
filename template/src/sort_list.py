@@ -1,7 +1,8 @@
 """
-module containing the sort_list function
+sort_list.py
 """
 from typing import List
+
 
 def sort_list(list_of_numbers: List[float]):
     """
