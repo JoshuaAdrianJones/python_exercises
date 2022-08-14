@@ -1,16 +1,3 @@
-* Notes on TDD and red-green-refactoring in Python
+* Template Title
 
-
-    https://gideonbrimleaf.github.io/2021/01/26/relative-imports-python.html
-
-    Getting relative imports working for the tests/ folder was annoying
-    
-    added Make file
-    added docker running with makefile
-    set up tests and coverage
-
-    Red : write tests first that fail
-    Green : write code that passes the tests
-    Refactor : cleanup
-
-    Should be a good starting point for new projects
+This project is a template to use for future projects.

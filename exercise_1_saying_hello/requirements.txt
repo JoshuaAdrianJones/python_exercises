@@ -1,0 +1,6 @@
+pylint
+black
+isort
+coverage
+rich
+pytest

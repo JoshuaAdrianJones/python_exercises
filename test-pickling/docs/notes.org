@@ -1,0 +1,3 @@
+* test pickling in Python
+
+https://docs.python.org/3.10/library/pickle.html
