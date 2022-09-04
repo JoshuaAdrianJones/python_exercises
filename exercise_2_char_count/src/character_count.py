@@ -12,6 +12,22 @@ def text_prompt() -> str:
     return Prompt.ask("Please enter some text")
 
 
+def input_handler() -> str:
+    """
+    Loop until the user provides a valid input
+    """
+    while True:
+        try:
+            user_input: str = text_prompt()
+            if user_input:
+                return user_input
+
+            raise ValueError("Input must not be none")
+
+        except ValueError as empty_input_msg:
+            print(empty_input_msg)
+
+
 if __name__ == "__main__":
-    input: str = text_prompt()
+    input: str = input_handler()
     print(f"{input} has {len(input)} characters")
