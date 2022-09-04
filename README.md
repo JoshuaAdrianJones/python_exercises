@@ -48,4 +48,17 @@ Read about Cucumber and Gherkin
 emphasis on functional core imperative shell patterns.
 
 
-### Exercise .1
+### Exercise .3 quotes
+
+quotes.py = a random quote + author
+quotes.py --pick = pick a specific api source from a menu.
+
+aggregate 3 different APIs' into a command line utility
+
+
+quote apis 
+https://type.fit/api/quotes
+
+https://zenquotes.io/api/random
+
+https://quotes.rest/qod.json
