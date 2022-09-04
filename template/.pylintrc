@@ -153,9 +153,7 @@ disable=raw-checker-failed,
         deprecated-pragma,
         use-symbolic-message-instead,
         redefined-builtin,
-        redefined-outer-name,
-        duplicate-code,
-        import-error
+        redefined-outer-name
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option

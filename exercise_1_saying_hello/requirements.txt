@@ -1,6 +1,10 @@
+# Tooling
 pylint
 black
 isort
 coverage
-rich
 pytest
+mypy
+
+# Project specific libs
+rich

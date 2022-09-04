@@ -7,17 +7,22 @@ docker-build:
 docker-run:
 	docker run py pytest
 test:
-	 pytest
+	 pytest ./src/
 coverage: 
 	coverage run -m pytest
 	coverage report -m
 lint:
 	isort --profile black ./src/
 	black  ./src/
-	pylint ./src/
+	pylint --rcfile .pylintrc ./src/
 run:
 	python src/saying_hello_app.py
+
+types:
+	mypy ./src/
 
 prep:
 	make lint
 	make coverage
+	make types
+	make test

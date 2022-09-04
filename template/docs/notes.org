@@ -1,3 +1,3 @@
-* Template Title
+* Exercise 1: saying hello
 
-This project is a template to use for future projects.
+Create a program that prompts for your name and prints a greeting using your name.

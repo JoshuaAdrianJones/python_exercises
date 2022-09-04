@@ -1,3 +1,10 @@
-coverage
+# Tooling
 pylint
 black
+isort
+coverage
+pytest
+mypy
+
+# Project specific libs
+rich
