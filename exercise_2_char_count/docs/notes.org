@@ -1,0 +1,3 @@
+* Exercise 2: char count
+
+Create a program that prompts for a string (word or a string) and return the length of the string.
