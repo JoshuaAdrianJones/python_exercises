@@ -1,0 +1,3 @@
+* Exercise 3: quotes
+
+Create a program displays a random quote.

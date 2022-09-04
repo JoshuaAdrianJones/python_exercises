@@ -1,4 +1,6 @@
-env:
+all: prep
+
+env: 
 	python3 -m venv env
 pip:
 	pip install --upgrade pip
@@ -16,14 +18,11 @@ lint:
 	isort --profile black ./src/
 	black  ./src/
 	pylint --rcfile .pylintrc ./src/
-run:
-	python src/saying_hello_app.py
-
 types:
 	mypy ./src/
 
 prep:
-	make lint
 	make coverage
 	make types
 	make test
+	make lint
