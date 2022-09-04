@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 COPY Makefile Makefile
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt; python -m pip install --upgrade pip;
 
 COPY . .
 CMD make run

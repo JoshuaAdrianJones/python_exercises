@@ -1,6 +1,19 @@
 # python_exercises
 
-> Repo purpose is project based learning including for setting up tests, CI runner, makefiles, dockerfiles
+> Repo purpose is project based learning including setting up:
+> - tests
+> - CI runner
+> -  makefiles
+> - dockerfiles
+
+### tools used
+
+black
+isort
+pylint
+pytest
+mypy
+coverage
 
 ### Notes on TDD and red-green-refactoring in Python
 
@@ -23,5 +36,16 @@
 Book used: Exercises for programmers (57) by B P Hogan
 
 
-### Exercise .1
 
+
+### Notes on behaviour driven development 
+
+Read about Cucumber and Gherkin
+
+
+### Coding style
+
+emphasis on functional core imperative shell patterns.
+
+
+### Exercise .1
