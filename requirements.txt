@@ -1,10 +1,9 @@
 # Tooling
-pylint
+flake8
 black
 isort
-coverage
 pytest
-mypy
+pyright
 
 # Project specific libs
 rich

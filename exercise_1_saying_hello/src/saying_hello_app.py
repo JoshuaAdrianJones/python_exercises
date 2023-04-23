@@ -2,10 +2,9 @@
 Saying hello app - get the users name and greet the user by name.
 """
 
+from greetings import greetings  # type: ignore
 from rich import print
 from rich.prompt import Prompt
-
-from greetings import greetings  # type: ignore
 
 
 def name_prompt() -> str:
@@ -14,5 +13,4 @@ def name_prompt() -> str:
 
 
 if __name__ == "__main__":
-
     print(greetings.add_name_to_greeting(greetings.greeting_generator(), name_prompt()))

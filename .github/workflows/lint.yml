@@ -21,8 +21,12 @@ jobs:
 
       - name: Analysing the code with pylint
         run: |
-          pylint --rcfile .pylintrc $(git ls-files */src/*.py */tests/*.py)
-
+            flake8 --ignore=E501 $(git ls-files */src/*.py */tests/*.py)
+            
       - name: check format with black
         run: |
           black --check $(git ls-files */src/*.py */tests/*.py)
+
+      - name: check format with black
+        run: |
+          isort --profile=black --check $(git ls-files */src/*.py */tests/*.py)

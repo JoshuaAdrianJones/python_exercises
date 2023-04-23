@@ -13,7 +13,6 @@ class TestGetQuote(unittest.TestCase):
     """
 
     def setUp(self) -> None:
-
         self.qod = PosixPath("./src/test/fixtures/quotes.rest.qod.json")
         self.type_fit = PosixPath("./src/test/fixtures/type_fit_quotes.json")
         self.zen = PosixPath("./src/test/fixtures/zen_quotes_random.json")
@@ -42,7 +41,6 @@ class TestJSONLoader(unittest.TestCase):
     """
 
     def setUp(self) -> None:
-
         self.qod = PosixPath("./src/test/fixtures/quotes.rest.qod.json")
         self.type_fit = PosixPath("./src/test/fixtures/type_fit_quotes.json")
         self.zen = PosixPath("./src/test/fixtures/zen_quotes_random.json")

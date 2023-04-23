@@ -11,18 +11,15 @@ docker-run:
 	docker run py pytest
 test:
 	 pytest ./src/
-coverage: 
-	coverage run -m pytest
-	coverage report -m
+
 lint:
 	isort --profile black ./src/
 	black  ./src/
-	pylint --rcfile .pylintrc ./src/
+	flake8 --ignore=E501 ./src/
 types:
-	mypy ./src/
+	pyright ./src/
 
 prep:
-	make coverage
 	make types
 	make test
 	make lint

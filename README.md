@@ -10,10 +10,10 @@
 
 black
 isort
-pylint
+flake8
 pytest
-mypy
-coverage
+pyright
+
 
 ### Notes on TDD and red-green-refactoring in Python
 

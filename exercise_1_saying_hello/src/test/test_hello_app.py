@@ -4,11 +4,10 @@ Tests for saying hello app
 import io
 import unittest
 
+from greetings import greetings  # type: ignore
 from rich import print
 from rich.console import Console
 from rich.prompt import Prompt
-
-from greetings import greetings  # type: ignore
 
 
 class TestSayHello(unittest.TestCase):
@@ -51,7 +50,6 @@ class TestSayHello(unittest.TestCase):
         Test greeting function returns expected strings
         """
         for _ in range(0, 100):
-
             self.assertIn(
                 greetings.select_greeting(greetings.get_random_number()),
                 [":rocket: Hey, ", "Hello ", "Good morning :rocket: "],
