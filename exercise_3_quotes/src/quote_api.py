@@ -65,7 +65,10 @@ def parse_zen(path: PosixPath) -> QuoteList:
         data = json.load(file)
         quotes = data["quotes"]
         return QuoteList(
-            [Quote(quote["q"], str(quote["a"] if not None else "")) for quote in quotes],
+            [
+                Quote(quote["q"], str(quote["a"] if not None else ""))
+                for quote in quotes
+            ],
             "zen",
         )
 
